@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: portal
+  m_EditorClassIdentifier: 
+  _clientAccessToken: 5ZA2L6C72V2QDFOBJSHBM7Z7GPKVXJPZ
+  _appInfo:
+    name: skdjaskjd
+    id: 1159050461727210
+    lang: en
+    isPrivate: 1
+    createdAt: 2023-12-28T09:11:46-0800
+    trainingStatus: 1
+    lastTrainDuration: 57
+    lastTrainedAt: 2023-12-28T09:17:22-0800
+    nextTrainAt: 2023-12-28T09:16:25-0800
+    intents:
+    - id: 6949207775128863
+      name: ninty
+      entities: []
+    entities: []
+    traits: []
+    versionTags: []
+    voices:
+    - name: wit$Rebecca
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Charlie
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - fast
+      - projected
+    - name: wit$Cooper
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Vampire
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Prospector
+      locale: en_US
+      gender: male
+      styles:
+      - default
+    - name: wit$Cody
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Remi
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cam
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Connor
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Railey
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cael
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Carl
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rubie
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Overconfident
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Disaffected
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Hollywood
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Trendy
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Baby
+      locale: en_US
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Surfer
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Southern Accent
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Kenyan Accent
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Kid
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Villain
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rosie
+      locale: en_CA
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Colin
+      locale: en_CA
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Pirate
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$British Butler
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Whimsical
+      locale: en_GB
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Wizard
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cockney Accent
+      locale: en_GB
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+  _configData:
+  - {fileID: 8546119975478289096}
+  _configurationId: fe2d7341-1b0d-44a5-957a-47f0c6fd3db3
+  timeoutMS: 10000
+  endpointConfiguration:
+    _uriScheme: 
+    _authority: 
+    _port: 0
+    _witApiVersion: 
+    _message: 
+    _speech: 
+    _dictation: 
+    _synthesize: 
+    _event: 
+    _converse: 
+  isDemoOnly: 0
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-fdcc6378-f122-4a3a-8d69-e30831520115.json
+  excludedAssemblies:
+  - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  relaxedResolution: 0
+--- !u!114 &8546119975478289096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2918ba0e7451694416d42d69e0944, type: 3}
+  m_Name: WitComposerData
+  m_EditorClassIdentifier: 
+  canvases: []
