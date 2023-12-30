@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class RFX1_TransformMotion : MonoBehaviour
 {
+    
     public float Distance = 30;
     public float Speed = 1;
     //public float Dampeen = 0;
@@ -28,12 +29,17 @@ public class RFX1_TransformMotion : MonoBehaviour
 
     private Vector3 startPosition;
     private Vector3 startPositionLocal;
+    
+    // this object transform
     Transform t;
+    // assigned target transform
     Transform targetT;
+    
     private Vector3 oldPos;
     private bool isCollided;
     private bool isOutDistance;
     private Quaternion startQuaternion;
+    
     //private float currentSpeed;
     private float currentDelay;
     private const float RayCastTolerance = 0.15f;
@@ -73,8 +79,11 @@ public class RFX1_TransformMotion : MonoBehaviour
         startQuaternion = t.rotation;
         t.localPosition = startPositionLocal;
         oldPos = t.TransformPoint(startPositionLocal);
+        
         OnCollisionDeactivateBehaviour(true);
+        // to not start at first update frame
         dropFirstFrameForFixUnityBugWithParticles = true;
+        //random time
         randomTimeOffset = Random.insideUnitSphere * 10;
     }
 
@@ -186,7 +195,9 @@ public class RFX1_TransformMotion : MonoBehaviour
         foreach (var effect in EffectsOnCollision)
         {
             var instance = Instantiate(effect, hit.point + hit.normal * CollisionOffset, new Quaternion()) as GameObject;
+            
             CollidedInstances.Add(instance);
+            
             if (HUE > -0.9f)
             {
                 var color = instance.AddComponent<RFX1_EffectSettingColor>();
@@ -194,9 +205,12 @@ public class RFX1_TransformMotion : MonoBehaviour
                 hsv.H = HUE;
                 color.Color = RFX1_ColorHelper.HSVToColor(hsv);
             }
+            
             instance.transform.LookAt(hit.point + hit.normal + hit.normal * CollisionOffset);
+            
             if (!CollisionEffectInWorldSpace) instance.transform.parent = transform;
             Destroy(instance, DestroyTimeDelay);
+            gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 

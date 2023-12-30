@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSION
-  - _ENVIRONMENTREFLECTIONS_OFF
   - _OCCLUSIONMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 1
@@ -98,10 +97,10 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _EnvironmentReflections: 0
-    - _GlossMapScale: 0
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 1
     - _Glossiness: 0.025
-    - _GlossyReflections: 0
+    - _GlossyReflections: 1
     - _Metallic: 0.221
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -123,7 +122,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2056486842563089391
+--- !u!114 &6429941776197161020
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
