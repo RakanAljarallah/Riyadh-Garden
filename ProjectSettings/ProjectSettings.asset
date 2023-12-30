@@ -138,10 +138,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1.2
   preloadedAssets:
-  - {fileID: -8751932166669537853, guid: b7f1a7a9669e7461b81f48fe833be022, type: 2}
-  - {fileID: 11400000, guid: 5f2770b644a634d509a86fa9dae21edb, type: 2}
   - {fileID: 11400000, guid: e71775aa6b62a484385ac8c196f61eca, type: 2}
-  - {fileID: 6205242405473697904, guid: 14c8f4689824843fdae6bdc8fd66bdb5, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -152,7 +149,7 @@ PlayerSettings:
   isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
   enableOpenGLProfilerGPURecorders: 0
-  allowHDRDisplaySupport: 0
+  allowHDRDisplaySupport: 1
   useHDRDisplay: 0
   hdrBitDepth: 0
   m_ColorGamuts: 00000000
@@ -171,7 +168,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 2
+  AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -274,13 +271,13 @@ PlayerSettings:
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  chromeosInputEmulation: 1
+  chromeosInputEmulation: 0
   AndroidMinifyRelease: 0
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
@@ -524,6 +521,9 @@ PlayerSettings:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 15000000
     m_Automatic: 0
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 02000000
+    m_Automatic: 0
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
@@ -548,7 +548,7 @@ PlayerSettings:
     m_Encoding: 1
   m_BuildTargetDefaultTextureCompressionFormat:
   - m_BuildTarget: Android
-    m_Format: 3
+    m_Format: 2
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -807,9 +807,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: USE_INPUT_SYSTEM_POSE_CONTROL;FUSION_WEAVER;FUSION2
-    Standalone: FUSION_WEAVER;FUSION2;USE_INPUT_SYSTEM_POSE_CONTROL
-    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL
+    Android: USE_INPUT_SYSTEM_POSE_CONTROL;FUSION_WEAVER;FUSION2;SHAPES_URP;GLTFAST;READY_PLAYER_ME
+    EmbeddedLinux: GLTFAST;READY_PLAYER_ME
+    GameCoreScarlett: GLTFAST;READY_PLAYER_ME
+    GameCoreXboxOne: GLTFAST;READY_PLAYER_ME
+    LinuxHeadlessSimulation: GLTFAST;READY_PLAYER_ME
+    Nintendo Switch: GLTFAST;READY_PLAYER_ME
+    PS4: GLTFAST;READY_PLAYER_ME
+    PS5: GLTFAST;READY_PLAYER_ME
+    QNX: GLTFAST;READY_PLAYER_ME
+    Stadia: GLTFAST;READY_PLAYER_ME
+    Standalone: FUSION_WEAVER;FUSION2;USE_INPUT_SYSTEM_POSE_CONTROL;GLTFAST;READY_PLAYER_ME
+    VisionOS: GLTFAST;READY_PLAYER_ME
+    WebGL: GLTFAST;READY_PLAYER_ME
+    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;GLTFAST;READY_PLAYER_ME
+    XboxOne: GLTFAST;READY_PLAYER_ME
+    iPhone: GLTFAST;READY_PLAYER_ME
+    tvOS: GLTFAST;READY_PLAYER_ME
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

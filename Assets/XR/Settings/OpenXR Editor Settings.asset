@@ -15,7 +15,7 @@ MonoBehaviour:
   Keys: 0700000001000000
   Values:
   - featureSets:
-    - com.meta.openxr.featureset.metaxr
     - com.unity.openxr.featureset.meta
+    - com.meta.openxr.featureset.metaxr
   - featureSets:
     - com.meta.openxr.featureset.metaxr
